@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package format="3">
+ <name>alpine_sim_slam</name><version>0.1.0</version>
+ <description>Simulation-odometry-assisted KISS-ICP for Alpine Patrol snapshot lidar.</description>
+ <maintainer email="Ming2zun@users.noreply.github.com">Ming2zun</maintainer><license>Apache-2.0</license><license>MIT</license>
+ <buildtool_depend>ament_cmake</buildtool_depend>
+ <depend>rclcpp</depend><depend>sensor_msgs</depend><depend>nav_msgs</depend><depend>std_msgs</depend>
+ <build_depend>eigen</build_depend><depend>tbb</depend><depend>libfmt-dev</depend><build_depend>nlohmann-json-dev</build_depend>
+ <export><build_type>ament_cmake</build_type></export>
+</package>

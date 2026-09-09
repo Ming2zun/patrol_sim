@@ -1,0 +1,25 @@
+godot_bridge:
+  ros__parameters:
+    host: "127.0.0.1"
+    port: 9090
+    token: "87d638e58cce41159468e14ab0644ff9486d13d1471a4f18a434f7d5ca8d6606"
+    reconnect_seconds: 1.0
+    ros_command_timeout_s: 0.25
+    cmd_vel_topic: "/cmd_vel"
+    cmd_vel_stamped: false
+    odom_topic: "/odom"
+    ground_truth_topic: "/ground_truth/pose"
+    imu_topic: "/imu/data"
+    publish_raw_points: false
+    points_topic: "/points_raw"
+    lio_points_topic: "/points_lio"
+    imu_position_ros: [0.335, 0.0, 2.55]
+    publish_odom_tf: true
+    lidar_frame: "lidar36_link"
+    clock_topic: "/clock"
+    status_topic: "/sim/status"
+    odom_frame: "odom"
+    base_frame: "base_link"
+    imu_frame: "imu_link"
+    publish_clock: true
+    publish_tf: true

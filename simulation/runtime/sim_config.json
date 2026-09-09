@@ -1,0 +1,37 @@
+{
+  "vehicle": {
+    "max_speed_mps": 10.0,
+    "max_yaw_rate_rps": 1.2,
+    "cruise_speed_kmh": 36.0,
+    "steering_model": "ackermann",
+    "max_steering_deg": 28.0,
+    "steering_rate_deg_s": 55.0
+  },
+  "network": {
+    "token": "87d638e58cce41159468e14ab0644ff9486d13d1471a4f18a434f7d5ca8d6606",
+    "bind_address": "127.0.0.1",
+    "port": 9090,
+    "command_timeout_s": 0.5
+  },
+  "sensors": {
+    "laser_samples": 0,
+    "laser_range_m": 40.0,
+    "camera_enabled": true,
+    "lidar_rings": 36,
+    "lidar_azimuth_samples": 180,
+    "lidar_hz": 10,
+    "lidar_range_min_m": 0.25,
+    "lidar_range_m": 60,
+    "lidar_vertical_min_deg": -25,
+    "lidar_vertical_max_deg": 15,
+    "lidar_position_ros": [
+      0.335,
+      0,
+      2.55
+    ],
+    "imu_hz": 200
+  },
+  "rendering": {
+    "quality": "high"
+  }
+}

@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.16)
+project(alpine_sim_slam)
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(Eigen3 REQUIRED)
+find_package(TBB REQUIRED)
+find_package(fmt REQUIRED)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_BUILD_TYPE Release)
+add_library(alpine_kiss STATIC
+ vendor/kiss_icp/core/Registration.cpp vendor/kiss_icp/core/VoxelHashMap.cpp
+ vendor/kiss_icp/core/VoxelUtils.cpp vendor/kiss_icp/core/Preprocessing.cpp
+ vendor/kiss_icp/core/Threshold.cpp vendor/kiss_icp/pipeline/KissICP.cpp)
+target_include_directories(alpine_kiss PUBLIC vendor)
+target_link_libraries(alpine_kiss PUBLIC Eigen3::Eigen TBB::tbb fmt::fmt)
+add_executable(mapping src/mapping.cpp)
+target_link_libraries(mapping alpine_kiss)
+ament_target_dependencies(mapping rclcpp sensor_msgs nav_msgs std_msgs)
+install(TARGETS mapping DESTINATION lib/${PROJECT_NAME})
+ament_package()

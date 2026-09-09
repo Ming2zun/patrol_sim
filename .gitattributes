@@ -1,0 +1,3 @@
+* text=auto eol=lf
+*.patch -whitespace
+ros2/src/alpine_sim_slam/vendor/** -whitespace

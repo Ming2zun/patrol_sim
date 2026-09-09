@@ -1,0 +1,10 @@
+<library path="test_c">
+  <class
+    name="test_c/LineDrawTool"
+    type="test_c::LineDrawTool"
+    base_class_type="rviz_common::Tool">
+    <description>
+      Continuous click path tool. Publishes a rounded and interpolated nav_msgs/Path request to the CottonSim path controller.
+    </description>
+  </class>
+</library>
