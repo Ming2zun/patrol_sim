@@ -5,7 +5,7 @@ Panels:
     Property Tree Widget:
       Expanded: ~
       Splitter Ratio: 0.5
-    Tree Height: 139
+    Tree Height: 270
   - Class: rviz_common/Tool Properties
     Expanded: ~
     Name: Tool Properties
@@ -136,8 +136,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 20.2833194732666
-        Min Value: -5.040040969848633
+        Max Value: 20.283430099487305
+        Min Value: -5.0398736000061035
         Value: true
       Axis: Z
       Channel Name: intensity
